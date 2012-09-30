@@ -28,9 +28,19 @@ describe 'About Page' do
     page.should have_selector('h1',:text=>'About Us')
   end
   it "should have title as 'About us'" do
-    visit '/static_pages/about' do
+    visit '/static_pages/about'
       page.should have_selector('title',:text=>"Ruby on Rails Tutorial Sample App | About Us")
     end
   end
-end
+
+  describe 'Contact Page' do
+    it "should have the content 'Content'" do
+      visit '/static_pages/contact'
+      page.should have_selector('h1',:text=>'Contact')
+    end
+    it "should have the title 'Contact'" do
+      visit '/static_pages/contact'
+      page.should have_selector('title',:text=>'Ruby on Rails Tutorial Sample App | Contact')
+    end
+  end
 end

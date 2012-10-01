@@ -3,3 +3,5 @@
 
 en:
   hello: "Hello world"
+  email_add: "test_user@test.com"
+  model_test_user: "test_user1"
